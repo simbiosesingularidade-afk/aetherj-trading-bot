@@ -205,3 +205,15 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+# Credenciais
+.env
+*.env
+
+# Estado do bot
+state_*.json
+*.log
+
+# Cache
+__pycache__/
+*.pyc
+Adiciona .env e state ao gitignore
