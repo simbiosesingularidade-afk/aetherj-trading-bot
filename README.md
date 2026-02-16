@@ -61,3 +61,51 @@ Detecta pumps, espera cooldown, compra na correção.
 - **Dados:** JSON state persistence
 
 
+## 🏗️ Arquitetura
+┌─────────────┐     ┌──────────────┐     ┌─────────────┐
+│  Binance API │◄───►│  AetherJ Bot │◄───►│  Telegram    │
+│  (ccxt async)│     │  (Python)    │     │  (Commands)  │
+└─────────────┘     └──────┬───────┘     └─────────────┘
+│
+┌──────┴───────┐
+│  3 Strategies │
+├──────────────┤
+│ 🏆 Major     │
+│ 🔥 Oversold  │
+│ 🚀 Pump      │
+└──────────────┘
+
+## 🚀 Como Usar
+
+1. Clone o repositório
+2. Crie um arquivo `.env` com suas credenciais:
+```bash
+BINANCE_API_KEY=sua_key
+BINANCE_SECRET=seu_secret
+TELEGRAM_TOKEN=seu_token
+TELEGRAM_CHAT_ID=seu_chat_id
+```
+3. Instale dependências:
+```bash
+pip install ccxt pandas aiohttp
+```
+4. Execute:
+```bash
+nohup python3 trading_bot.py > bot.log 2>&1 &
+```
+
+## ⚠️ Disclaimer
+
+Este projeto é apenas para fins educacionais e de demonstração.
+Trading de criptomoedas envolve risco significativo de perda.
+Use por sua conta e risco.
+
+## 📄 Licença
+
+MIT License — veja [LICENSE](LICENSE)
+
+## 👤 Autor
+
+**Mário Marques De Goes**
+- LinkedIn: [linkedin.com/in/seu-perfil](https://linkedin.com/in/seu-perfil)
+- Email: mariomarques1987@outlook.com
