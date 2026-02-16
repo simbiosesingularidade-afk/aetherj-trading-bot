@@ -107,5 +107,5 @@ MIT License — veja [LICENSE](LICENSE)
 ## 👤 Autor
 
 **Mário Marques De Goes**
-- LinkedIn: [linkedin.com/in/seu-perfil](https://linkedin.com/in/seu-perfil)
+- LinkedIn: [linkedin.com/in/seu-perfil](https://linkedin.com/in/mariomarques1987)
 - Email: mariomarques1987@outlook.com
